@@ -1,0 +1,33 @@
+/* Floating Seeds Animation */
+@keyframes floatSeed {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-25px) rotate(180deg);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+.floating-seed {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #d4a373; /* Seed Color */
+  border-radius: 50% 0% 50% 50%; /* Drumstick seed shape */
+  border: 2px solid #588157;
+  animation: floatSeed 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Seed Positions & Speeds */
+.seed1 { top: 15%; left: 10%; animation-duration: 5s; }
+.seed2 { top: 60%; left: 80%; animation-duration: 7s; }
+.seed3 { top: 25%; left: 85%; animation-duration: 6s; }
+.seed4 { top: 70%; left: 15%; animation-duration: 8s; }
+.seed5 { top: 10%; left: 50%; animation-duration: 5.5s; }
