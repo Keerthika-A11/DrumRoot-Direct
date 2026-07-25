@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "echo 'No build required'"
+  },
   "dependencies": {
     "react-router-dom": "^7.18.1"
   }
